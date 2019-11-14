@@ -1,0 +1,134 @@
+/*
+ * TableCustom 表格列自定义显示插件
+ * Author: Kevin
+ * Date: 2019-11-13
+ */
+
+@charset "utf-8";
+.tbcustom{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.1);
+	z-index: 1;
+	display: none;
+}
+
+.tbcustom-toast{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	    -ms-transform: translateY(-50%) translateX(-50%);
+	        transform: translateY(-50%) translateX(-50%);
+	width: 500px;
+	height: 320px;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	background: #fff;
+	overflow: hidden;
+	-webkit-box-shadow: 1px 1px 50px rgba(0,0,0,.05);
+	        box-shadow: 1px 1px 50px rgba(0,0,0,.05);
+}
+
+.tbcustom-toast ul{
+	list-style: none;
+}
+
+.tbcustom-title {
+	position: relative;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: #F8F8F8;
+	border-bottom: 1px solid #eee;
+}
+
+.tbcustom-title-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	height: 100%;
+	font-size: 13px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAABJklEQVQ4T63UPUoEMRwF8PcPimzlNQTBE1gooq2gZ8hH7QUs7e0yOYAXkG28gKBeQFtR2E4QrGaeZGGHWTczyQymDr98vJcI/nmI9/5QRBbGmNepdgjhgOSOMeZJqqpakNxSSp1qrV/GoiGEo6Zp7gG8W2v3InhJ8g7A91i0gyml1LnW+kHijqagKSxaS3As2oetgaXoELYB5tAclgT70BKsF/yLisg1yRsAbZp99WpDSU3opL8N4GdVjaGuDoLxmHVdz0VkBuBLKXWSK38v2L0zEbkleVVS/iSYCqC0/BvgUJol6BpYUo0c2oIlWMkzXYJjsBwqU7AUSvLMOfccf+xPALslpc2U/81aux93eAHgQ2v9OPa3Xs333h+TnDnn5oMvZcoCvxW3MCZqJlrvAAAAAElFTkSuQmCC) center no-repeat;
+	background-size: 15px;
+	cursor: pointer;
+}
+.tbcustom-title-close:hover{
+	opacity: 0.8;
+}
+.tbcustom-title-close:active{
+	opacity: 1;
+}
+.tbcustom-main {
+	height: 55%;
+	padding: 10px;
+	overflow: auto;
+}
+.tbcustom-foot {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.tbcustom-submit {
+	margin: 0 auto;
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 18px;
+	background-color: #1E9FFF;
+	color: #fff;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 14px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.tbcustom-submit:hover{
+	opacity: 0.8;
+}
+.tbcustom-submit:active{
+	opacity: 1;
+}
+.tbcustom-main-list{
+	margin: 0;
+	padding: 0;
+}
+.tbcustom-main-list li{
+	float: left;
+	width: 33.3%;
+	height: 30px;
+	font-size: 14px;
+	letter-spacing: 0;
+	display: inline-block;
+}
+.tbcustom-main-checkbox-label{
+	margin-left: 5px;
+}
+.tbcustom-all-items{
+	margin: 10px auto;
+	padding: 0;
+	width: 140px;
+}
+.tbcustom-all-items li{
+	float: left;
+	margin-right: 10px;
+	letter-spacing: 0;
+	display: inline-block;
+}
+.tbcustom-all-items li:last-of-type{
+	margin-right: 0;
+}
+.tbcustom-clearfloat{
+	float: none;
+	clear: both;
+}

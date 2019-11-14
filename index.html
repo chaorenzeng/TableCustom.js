@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			table {
+				width: 100%;
+				border: 1px solid;
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+			th,
+			td {
+				border: 1px solid;
+			}
+
+			.main {
+				width: 100%;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+
+			.main-table {
+				width: 100%;
+			}
+
+			.main-setting {
+				margin-top: 50px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="js/TableCustom/TableCustom.css" />
+	</head>
+	<body>
+		<div class="main">
+			<table id="myTable" class="main-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>VEHICLE</th>
+						<th>LICENSE</th>
+						<th>FRAME</th>
+						<th>ENGINE</th>
+						<th>EQUIPMENT</th>
+						<th>DEVICE</th>
+						<th>INTERNET</th>
+						<th>AFFILIATED</th>
+						<th>LICENSE</th>
+						<th>VEHICLE</th>
+						<th>ONLINE</th>
+						<th>TIME</th>
+						<th>MILEAGE</th>
+						<th>OPERATION</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Col_1</td>
+						<td>Col_2</td>
+						<td>Col_3</td>
+						<td>Col_4</td>
+						<td>Col_5</td>
+						<td>Col_6</td>
+						<td>Col_7</td>
+						<td>Col_8</td>
+						<td>Col_9</td>
+						<td>Col_10</td>
+						<td>Col_11</td>
+						<td>Col_12</td>
+						<td>Col_13</td>
+						<td>Col_14</td>
+						<td>Col_15</td>
+					</tr>
+					<tr>
+						<td>Col_1</td>
+						<td>Col_2</td>
+						<td>Col_3</td>
+						<td>Col_4</td>
+						<td>Col_5</td>
+						<td>Col_6</td>
+						<td>Col_7</td>
+						<td>Col_8</td>
+						<td>Col_9</td>
+						<td>Col_10</td>
+						<td>Col_11</td>
+						<td>Col_12</td>
+						<td>Col_13</td>
+						<td>Col_14</td>
+						<td>Col_15</td>
+					</tr>
+					<tr>
+						<td>Col_1</td>
+						<td>Col_2</td>
+						<td>Col_3</td>
+						<td>Col_4</td>
+						<td>Col_5</td>
+						<td>Col_6</td>
+						<td>Col_7</td>
+						<td>Col_8</td>
+						<td>Col_9</td>
+						<td>Col_10</td>
+						<td>Col_11</td>
+						<td>Col_12</td>
+						<td>Col_13</td>
+						<td>Col_14</td>
+						<td>Col_15</td>
+					</tr>
+					<tr>
+						<td>Col_1</td>
+						<td>Col_2</td>
+						<td>Col_3</td>
+						<td>Col_4</td>
+						<td>Col_5</td>
+						<td>Col_6</td>
+						<td>Col_7</td>
+						<td>Col_8</td>
+						<td>Col_9</td>
+						<td>Col_10</td>
+						<td>Col_11</td>
+						<td>Col_12</td>
+						<td>Col_13</td>
+						<td>Col_14</td>
+						<td>Col_15</td>
+					</tr>
+				</tbody>
+			</table>
+			<button type="button" id="myBtn" class="main-setting">TableConfiguration</button>
+		</div>
+
+		<script src="js/TableCustom/TableCustom.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var tabelCustom = new TableCustom({
+				btnId: 'myBtn', //列表配置项按钮Id
+				tableId: 'myTable' //列表配置表格Id
+			})
+		</script>
+	</body>
+</html>
