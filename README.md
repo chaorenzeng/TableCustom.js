@@ -2,7 +2,7 @@
 ### 表格列自定义显示隐藏 (Table column custom display plug-in)
 
 #### 案例展示(Case presentation)
-![查看演示](https://github.com/chaorenzeng/TableCustom.js.git/index.gif)
+![查看演示](https://github.com/chaorenzeng/TableCustom.js/blob/master/index.gif)
 
 #### 下载地址(Download address)
 > https://github.com/chaorenzeng/TableCustom.js.git
