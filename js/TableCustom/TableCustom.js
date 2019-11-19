@@ -77,7 +77,7 @@
 				var item = {},
 					cell = thead.cells[i];
 				item.dom = cell;
-				item.title = cell.innerText || '';
+				item.title = cell.innerText.trim() || '';
 				item.show = true;
 				theadArray.push(item)
 			}
@@ -340,7 +340,7 @@
                 return false;
             }
             var isDifferent = theadArrayStorage.some(function (item, index) {
-                return item.title != thead.cells[index].innerText;
+                return item.title != thead.cells[index].innerText.trim();
             })
             if (isDifferent) {
                 return false;
@@ -385,7 +385,7 @@
             thItem['index'] = i; //标识位置
             for (var j = 0, tpLen = template.length; j < tpLen; j++) {
                 var tpItem = template[j];
-                if (tpItem.sets.indexOf(thItem.title) != -1) {
+                if (tpItem.sets.includes(thItem.title.toString().trim())) {
                     tpItem.items.push(thItem);
                     thItem.hadCate = true; //标识已经分类
                     break;
